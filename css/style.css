@@ -1,7 +1,7 @@
-:root{
-    --cor-destaque:orangered;
-    --cor-preta:black;
-    --cor-editada : rgba(0, 0, 0, 0.8)
+:root {
+  --cor-destaque: orangered;
+  --cor-preta: black;
+  --cor-editada: rgba(0, 0, 0, 0.8);
 }
 
 * {
@@ -14,12 +14,20 @@
   text-decoration: none;
   list-style: none;
 }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 35px 12%;
+  padding: 20px 12%;
   background: var(--cor-editada);
   backdrop-filter: blur(10px);
   display: flex;
@@ -28,6 +36,11 @@
   z-index: 100;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 15px 5%;
+  }
+}
 .logo {
   font-size: 25px;
   color: white;
@@ -176,30 +189,30 @@ span {
   box-shadow: 0 0 25px var(--cor-destaque), 0 0 50px var(--cor-destaque);
 }
 
-.about-content h2{
-    text-align: left;
-    color: white;
-    font-size: 42px;
+.about-content h2 {
+  text-align: left;
+  color: white;
+  font-size: 42px;
 }
 
-.about-content h3{
-    font-size: 62px;
-    color: white;
+.about-content h3 {
+  font-size: 62px;
+  color: white;
 }
 
-.about-content p{
-    color: white;
-    font-size: 20px;
-    margin: 2em 0 3em;
+.about-content p {
+  color: white;
+  font-size: 20px;
+  margin: 2em 0 3em;
 }
 
-.contact-me{
+.contact-me {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 40px;
 }
-.contact-form form{
+.contact-form form {
   max-width: 50em;
   margin: 1rem auto;
   text-align: center;
@@ -207,18 +220,18 @@ span {
 }
 
 .contact-form form .input-box input,
-.contact-form form textarea{
+.contact-form form textarea {
   width: 100%;
   padding: 1.5rem;
   font-size: 18px;
   color: black;
-  background:rgb(241, 241, 241);
-  border-radius: .8rem;
+  background: rgb(241, 241, 241);
+  border-radius: 0.8rem;
   margin: 1rem 0;
   resize: none;
 }
 
-footer{
+footer {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -226,13 +239,13 @@ footer{
   background-color: black;
 }
 
-.footer .social{
+.footer .social {
   text-align: center;
   padding-bottom: 25px;
   color: white;
 }
 
-.footer .social a{
+.footer .social a {
   font-size: 24px;
   color: white;
   border: 2px solid var(--cor-destaque);
@@ -247,13 +260,12 @@ footer{
   transition: 0.3 ease;
 }
 
-.footer .social a:hover{
-  transform: scale(1,2)translateY(-10px);
+.footer .social a:hover {
   color: var(--cor-destaque);
   border: 2px solid var(--cor-destaque);
 }
 
-.footer ul{
+.footer ul {
   margin-top: 0;
   padding: 0;
   font-size: 18px;
@@ -262,22 +274,22 @@ footer{
   text-align: center;
 }
 
-.footer ul li a{
+.footer ul li a {
   color: white;
   border-bottom: 3px solid transparent;
   transition: 0.3 ease;
 }
 
-.footer ul li a:hover{
+.footer ul li a:hover {
   border-bottom: 3px solid var(--cor-destaque);
 }
 
-.footer ul li{
+.footer ul li {
   display: inline-block;
   padding: 0 15px;
 }
 
-.footer .copyright{
+.footer .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 12px;
