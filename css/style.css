@@ -347,7 +347,88 @@ footer {
     font-size: 32px;
   }
   .contact-form form {
-    max-width: 100%;
+    max-width: 90%;
+  }
+  .contact-form form .input-box input,
+  .contact-form form textarea {
+    width: 100%;
+  }
+  footer {
+    padding: 20px 0;
+  }
+  .footer .social {
+    padding-bottom: 15px;
+  }
+  .footer .social a {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+  }
+  .footer ul {
+    font-size: 16px;
+  }
+  .footer .copyright {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px 5%;
+  }
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 5%;
+  }
+  .home-content h3 {
+    font-size: 28px;
+  }
+  .home-content h1 {
+    font-size: 48px;
+  }
+  .home-content {
+    font-size: 16px;
+  }
+  .home-content > p {
+    padding-top: 20px;
+  }
+  .btn-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 20px;
+  }
+  .btn-1,
+  .btn-2 {
+    width: 100%;
+  }
+  .img-box img {
+    width: 100%;
+  }
+  .about {
+    flex-direction: column;
+    padding: 12% 5%;
+  }
+  .about-img img {
+    width: 100%;
+  }
+  .about-content h2 {
+    text-align: center;
+  }
+  .about-content h3 {
+    font-size: 48px;
+  }
+  .about-content p {
+    font-size: 16px;
+  }
+  .contact-me {
+    font-size: 28px;
+  }
+  .contact-form form {
+    max-width: 90%;
   }
   .contact-form form .input-box input,
   .contact-form form textarea {
