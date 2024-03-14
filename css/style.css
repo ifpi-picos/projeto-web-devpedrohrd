@@ -9,8 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
-    "Poppins";
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -381,6 +380,8 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 30px 5%;
+    padding-top: 120px;
+    min-height: auto;
   }
   .home-content h3 {
     font-size: 28px;
@@ -407,11 +408,19 @@ footer {
   }
   .img-box img {
     width: 100%;
+    display: none;
   }
   .about {
     flex-direction: column;
     padding: 12% 5%;
+    gap: 3em;
   }
+
+  .about-img {
+    width: 80%;
+    margin-top: 30px;
+  }
+
   .about-img img {
     width: 100%;
   }
@@ -423,7 +432,21 @@ footer {
   }
   .about-content p {
     font-size: 16px;
+    padding: 30px;
+    text-align: justify;
+    word-spacing: -2px !important;
   }
+
+  .contact {
+    display: none;
+  }
+
+  .titulos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
   .contact-me {
     font-size: 28px;
   }
