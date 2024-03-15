@@ -148,14 +148,18 @@ span {
   cursor: pointer;
 }
 
-.btn-2 a{
+.btn-2 a {
   color: white;
 }
 
 .btn-2:hover {
   background-color: white;
+}
+
+.btn-2:hover a {
   color: var(--cor-destaque);
 }
+
 .img-box img {
   border-radius: 50%;
   width: 550px;
