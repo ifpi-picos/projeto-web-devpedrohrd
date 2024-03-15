@@ -154,7 +154,7 @@ span {
 
 .btn-2:hover {
   background-color: white;
-  color: --cor-destaque;
+  color: var(--cor-destaque);
 }
 .img-box img {
   border-radius: 50%;
