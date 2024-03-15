@@ -151,8 +151,9 @@ span {
 .btn-2 a{
   color: white;
 }
+
 .btn-2:hover {
-  background-color: white;
+  background-color: var(--cor-destaque);
   color: --cor-destaque;
 }
 .img-box img {
