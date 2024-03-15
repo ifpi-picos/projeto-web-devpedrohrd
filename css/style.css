@@ -147,6 +147,10 @@ span {
   transition: 0.3 ease;
   cursor: pointer;
 }
+
+.btn-2 a{
+  color: white;
+}
 .btn-2:hover {
   background-color: white;
   color: --cor-destaque;
