@@ -149,7 +149,8 @@ span {
 }
 
 .btn-2 a {
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .btn-2:hover {
